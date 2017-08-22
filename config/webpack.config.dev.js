@@ -153,6 +153,7 @@ module.exports = {
           /\.(js|jsx)(\?.*)?$/,
           /\.(ts|tsx)(\?.*)?$/,
           /\.css$/,
+          /\.scss$/,
           /\.json$/,
           /\.bmp$/,
           /\.gif$/,
@@ -220,6 +221,11 @@ module.exports = {
       },
       // ** STOP ** Are you adding a new loader?
       // Remember to add the new extension(s) to the "url" loader exclusion list.
+      {
+        test: /\.scss$/,
+        include: paths.appSrc,
+        loader: [require.resolve('style-loader'), require.resolve('css-loader'), require.resolve('sass-loader')] 
+      },
     ],
   },
   plugins: [

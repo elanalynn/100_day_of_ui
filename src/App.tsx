@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './App.css';
+import './App.scss';
 
 class App extends React.Component<{}, {}> {
   render() {
@@ -9,7 +9,7 @@ class App extends React.Component<{}, {}> {
           <h1>100 Days of UI</h1>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
+          placeholder
         </p>
       </div>
     );
