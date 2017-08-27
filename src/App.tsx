@@ -1,16 +1,16 @@
 import * as React from 'react';
 import './App.scss';
 
+import Day001 from './components/001/Day001';
+
 class App extends React.Component<{}, {}> {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
+        <header className="App-header">
           <h1>100 Days of UI</h1>
-        </div>
-        <p className="App-intro">
-          placeholder
-        </p>
+        </header>
+        <Day001 />
       </div>
     );
   }
