@@ -1,7 +1,13 @@
+$col1: hsla(118, 100%, 86%, 1);
+$col2: hsla(145, 65%, 80%, 1);
+$col3: hsla(159, 46%, 72%, 1);
+$col4: hsla(31, 86%, 59%, 1);
+$col5: hsla(356, 12%, 22%, 1);
+
 button {
     width: 10em;
     height: 3em;
-    background: cadetblue;
+    background: $col4;;
     color: #fff;
     border: none;
     margin: 1em;
@@ -13,7 +19,8 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: content;
-    background: hotpink;
+    background: $col5;
+    border: 2px solid $col1;
     color: #fff;
     padding: 2em; 
 
@@ -47,6 +54,7 @@ button {
     align-self: center;
     justify-content: space-around;
     width: 50%;
+    margin-top: 1em;
 
     div {
         width: 1em;

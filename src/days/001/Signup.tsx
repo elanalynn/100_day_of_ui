@@ -1,16 +1,11 @@
 import * as React from 'react';
 import './001.scss';
+import Progress from './Progress';
 
-class Day001 extends React.Component<{}, {}> {
+class Signup extends React.Component<{}, {}> {
   render() {
     return (
-      <div>
-        <section>
-            <button type="button">Sign Up</button>
-            <button type="button">Login</button>
-        </section>
-        <section className="sign-up">
-
+        <div>
             <h2>Sign up in Seconds</h2>
             <form>
                 <div className="form-group">
@@ -29,17 +24,11 @@ class Day001 extends React.Component<{}, {}> {
                     <button type="submit">Sign Up</button>
                 </div>
             </form>
-            <section className="progress">
-                <div />
-                <div />
-                <div />
-            </section>
-        </section>
-
-      </div>
+            <Progress />
+        </div>
     );
   }
 }
 
-export default Day001;
+export default Signup;
 
