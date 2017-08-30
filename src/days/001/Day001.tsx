@@ -12,22 +12,26 @@ class Day001 extends React.Component<{}, {}> {
 
     constructor(props: Object) {
         super(props);
-        this.handledSignupClick = this.handledSignupClick.bind(this);
-        this.handledSigninClick = this.handledSigninClick.bind(this);
+        this.handleSignUpClick = this.handleSignUpClick.bind(this);
+        this.handleSignInClick = this.handleSignInClick.bind(this);
         this.state = {signup: false, signin: false};
     }
 
-    handledSignupClick() {
+    handleSignUpClick() {
         this.setState({signup: true});
     }
 
-    handledSigninClick() {
+    handleSignInClick() {
         this.setState({signin: true});
     }
 
     render() {
         return (
             <div>
+                <section>
+                    <button>Sign Up</button>
+                    <button>Login</button>
+                </section>
                 <section className="sign-up">
                     {!this.signup && !this.signin &&  <Options />}
                     {this.signup && <Signup />}
